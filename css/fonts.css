@@ -1,0 +1,46 @@
+/* All things fonts. CSS page to control fonts for the entire project */
+
+/* 0. Custom properties */
+/* 1. Define the universal font (Roberto - Google Fonts for the project */
+/* 2. Main Logo */
+
+/* ******************** */
+/* 0. Custom properties */
+/* ******************** */
+
+:root {
+    --standard-font: 'Roboto', sans-serif;
+    --logo-font: 'Roboto Condensed', sans-serif;
+    --title-font-size: 20px;
+    --regular-font-size: calc(18px + 1vw);
+    --mobile-font-size: calc(16px + 1vw);
+    --logo-z-axis: 5;
+}
+
+/* 1. Define the universal font (Roberto - Google Fonts for the project and font settings*/
+
+/* Set standard fonts */
+html {
+    font-family: var(--standard-font);
+    font-size: var(--regular-font-size);
+}
+
+h1 {
+    margin: 0;
+}
+
+/* 2. Main Logo */
+#main-logo {
+    position: fixed;
+    font-family: var(--logo-font);
+    font-weight: 500;
+    font-size: --regular-font-size;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: white;
+    background-color: red;
+    width:fit-content;
+    padding: 0.2rem 0.4rem;
+    top: 5vh;
+    z-index: var(--logo-z-axis);
+}
