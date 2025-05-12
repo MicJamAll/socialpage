@@ -34,7 +34,6 @@ h1 {
     position: fixed;
     font-family: var(--logo-font);
     font-weight: 500;
-    font-size: --regular-font-size;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: white;
