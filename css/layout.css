@@ -1,0 +1,40 @@
+/* Style sheet to style the genetionral layout of the app using parameters from parameters.css*/
+
+/* 0. Layout metrics */
+/* 1. Main background layout including background image */
+/* Q. Media Queries */
+/* ************************************* */
+
+/* 0. Layout metrics */
+
+/* 1. Main background layout including background image */
+
+html {
+    background-image: url(../images/beach-969s.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* Q. Media Queries */
+
+@media screen 
+and ((((orientation: portrait) 
+    and (min-height: 967px) 
+    and (max-height: 1440px)))
+    or  
+    (((orientation: landscape) 
+    and (min-width: 967px) 
+    and (max-width: 1440px)))) {
+    html {
+        background-image: url(../images/beach-1440s.jpg);
+    }
+}
+
+@media screen 
+and (orientation: landscape) 
+    and (min-width: 1441px) {
+    html {
+        background-image: url(../images/beach-1920w.jpg);
+    }
+}
